@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Easy Code</title>
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Share+Tech+Mono&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Matrix Background -->
+
+    <canvas id="matrix"></canvas>
+
+    <!-- ==========================
+         HEADER
+    =========================== -->
+
+    <header>
+
+        <div class="logo">
+
+            <h1>EASY CODE</h1>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li>
+
+                    <a href="../index.html"
+                       data-lang="home">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="about.html"
+                       data-lang="about">
+
+                        About
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="skills.html"
+                       data-lang="skills">
+
+                        Skills
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="projects.html"
+                       class="active"
+                       data-lang="projects">
+
+                        Projects
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="contact.html"
+                       data-lang="contact">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Language -->
+
+        <div class="language-dropdown">
+
+            <button id="languageButton">
+
+                🌐
+
+                <span data-lang="language">
+
+                    Language
+
+                </span>
+
+                ▼
+
+            </button>
+
+            <div class="language-menu"
+                 id="languageMenu">
+
+                <button onclick="changeLanguage('en')">
+
+                    🇺🇸 English
+
+                </button>
+
+                <button onclick="changeLanguage('pt')">
+
+                    🇧🇷 Português
+
+                </button>
+
+                <button onclick="changeLanguage('ja')">
+
+                    🇯🇵 日本語
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+
+        <button id="menuButton">
+
+            ☰
+
+        </button>
+
+    </header>
+
+    <!-- ==========================
+         MAIN
+    =========================== -->
+
+    <main class="page">
+
+        <!-- Hero -->
+
+        <section class="page-title">
+
+            <h1 data-lang="projectsHero">
+
+                My Projects
+
+            </h1>
+
+            <p data-lang="projectsSubtitle">
+
+                Explore the resources I'm using while building my web development journey.
+
+            </p>
+
+        </section>
+
+        <!-- ==========================
+             FILTERS
+        =========================== -->
+
+        <section class="filter-buttons">
+
+            <button class="active"
+                    onclick="filterProjects('all')"
+                    data-lang="all">
+
+                All
+
+            </button>
+
+            <button onclick="filterProjects('html')">
+
+                HTML
+
+            </button>
+
+            <button onclick="filterProjects('css')">
+
+                CSS
+
+            </button>
+
+            <button onclick="filterProjects('javascript')">
+
+                JavaScript
+
+            </button>
+
+        </section>
+
+        <!-- ==========================
+             LEARNING RESOURCES
+        =========================== -->
+
+        <section class="projects-grid">
+
+            <!-- HTML -->
+
+            <article class="glass-card project html">
+
+                <div class="project-content">
+
+                    <h2>
+
+                        🌐 HTML
+
+                    </h2>
+
+                    <p data-lang="htmlResource">
+
+                        Learn HTML using the official MDN documentation.
+
+                    </p>
+
+                    <div class="tags">
+
+                        <span>HTML5</span>
+
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                           target="_blank"
+                           class="btn"
+                           data-lang="visitSite">
+
+                            Visit Website
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- CSS -->
+
+            <article class="glass-card project css">
+
+                <div class="project-content">
+
+                    <h2>
+
+                        🎨 CSS
+
+                    </h2>
+
+                    <p data-lang="cssResource">
+
+                        Learn layouts, Flexbox, Grid, animations and responsive design.
+
+                    </p>
+
+                    <div class="tags">
+
+                        <span>CSS3</span>
+
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                           target="_blank"
+                           class="btn"
+                           data-lang="visitSite">
+
+                            Visit Website
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- JavaScript -->
+
+            <article class="glass-card project javascript">
+
+                <div class="project-content">
+
+                    <h2>
+
+                        ⚡ JavaScript
+
+                    </h2>
+
+                    <p data-lang="jsResource">
+
+                        Learn programming fundamentals and build interactive websites.
+
+                    </p>
+
+                    <div class="tags">
+
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                           target="_blank"
+                           class="btn"
+                           data-lang="visitSite">
+
+                            Visit Website
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+                        <!-- Japanese Typing -->
+
+            <article class="glass-card project typing">
+
+                <div class="project-content">
+
+                    <h2>
+
+                        ⌨ Japanese Typing
+
+                    </h2>
+
+                    <p data-lang="typingResource">
+
+                        Practice typing with a Japanese keyboard and improve your speed.
+
+                    </p>
+
+                    <div class="tags">
+
+                        <span>Japanese</span>
+
+                        <span>Typing</span>
+
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="https://www.e-typing.ne.jp/"
+                           target="_blank"
+                           class="btn"
+                           data-lang="practiceNow">
+
+                            Practice Now
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <!-- ==========================
+             FUTURE PROJECTS
+        =========================== -->
+
+        <section class="future-projects">
+
+            <h2 data-lang="futureProjects">
+
+                Future Projects
+
+            </h2>
+
+            <div class="cards">
+
+                <div class="glass-card">
+
+                    <h3>
+
+                        🟡 Portfolio Website
+
+                    </h3>
+
+                    <p data-lang="statusProgress">
+
+                        In Progress
+
+                    </p>
+
+                </div>
+
+                <div class="glass-card">
+
+                    <h3>
+
+                        ⚪ Weather App
+
+                    </h3>
+
+                    <p data-lang="statusPlanned">
+
+                        Planned
+
+                    </p>
+
+                </div>
+
+                <div class="glass-card">
+
+                    <h3>
+
+                        ⚪ Expense Tracker
+
+                    </h3>
+
+                    <p data-lang="statusPlanned">
+
+                        Planned
+
+                    </p>
+
+                </div>
+
+                <div class="glass-card">
+
+                    <h3>
+
+                        ⚪ Quiz Game
+
+                    </h3>
+
+                    <p data-lang="statusPlanned">
+
+                        Planned
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             COMING SOON
+        =========================== -->
+
+        <section class="coming-soon">
+
+            <div class="glass-card">
+
+                <h2 data-lang="comingSoonTitle">
+
+                    More Projects Coming Soon
+
+                </h2>
+
+                <p data-lang="comingSoonProjects">
+
+                    🚀 Soon I will be uploading my own projects here.
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Easy Code
+
+        </p>
+
+        <p data-lang="footer">
+
+            Built with HTML, CSS & JavaScript
+
+        </p>
+
+    </footer>
+
+    <!-- ==========================
+         JAVASCRIPT
+    =========================== -->
+
+    <script src="../js/matrix.js"></script>
+
+    <script src="../js/translations.js"></script>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

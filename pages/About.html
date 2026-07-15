@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Easy Code</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Matrix Background -->
+
+    <canvas id="matrix"></canvas>
+
+    <!-- ==========================
+         HEADER
+    =========================== -->
+
+    <header>
+
+        <div class="logo">
+
+            <h1>EASY CODE</h1>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li>
+
+                    <a href="../index.html" data-lang="home">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="about.html" class="active" data-lang="about">
+
+                        About
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="skills.html" data-lang="skills">
+
+                        Skills
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="projects.html" data-lang="projects">
+
+                        Projects
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="contact.html" data-lang="contact">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Language -->
+
+        <div class="language-dropdown">
+
+            <button id="languageButton">
+
+                🌐
+                <span data-lang="language">
+
+                    Language
+
+                </span>
+
+                ▼
+
+            </button>
+
+            <div class="language-menu" id="languageMenu">
+
+                <button onclick="changeLanguage('en')">
+
+                    🇺🇸 English
+
+                </button>
+
+                <button onclick="changeLanguage('pt')">
+
+                    🇧🇷 Português
+
+                </button>
+
+                <button onclick="changeLanguage('ja')">
+
+                    🇯🇵 日本語
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+
+        <button id="menuButton">
+
+            ☰
+
+        </button>
+
+    </header>
+
+    <!-- ==========================
+         MAIN
+    =========================== -->
+
+    <main class="page">
+
+        <!-- Hero -->
+
+        <section class="page-title">
+
+            <h1 data-lang="aboutHero">
+
+                About Me
+
+            </h1>
+
+            <p data-lang="aboutHeroText">
+
+                Learn more about my journey as a web developer.
+
+            </p>
+
+        </section>
+
+        <!-- About Grid -->
+
+        <section class="about-grid">
+
+            <!-- Who am I -->
+
+            <div class="glass-card">
+
+                <h2 data-lang="whoAmI">
+
+                    Who am I?
+
+                </h2>
+
+                <p data-lang="whoText">
+
+                    Hello! My name is <strong>Thalyson Alves</strong>.
+                    I am passionate about web development and enjoy creating
+                    modern, responsive websites using HTML, CSS and JavaScript.
+                    I'm also studying Japanese while improving my web
+                    development skills.
+
+                </p>
+
+            </div>
+
+            <!-- Education -->
+
+            <div class="glass-card">
+
+                <h2 data-lang="education">
+
+                    Education
+
+                </h2>
+
+                <p data-lang="studentAt">
+
+                    Student at
+
+                </p>
+
+                <h3>
+
+                    フォーラム情報アカデミー専門学校
+
+                </h3>
+
+                <p data-lang="academyName">
+
+                    (Forum Information Academy College)
+
+                </p>
+
+                <p data-lang="educationText">
+
+                    Currently studying programming,
+                    web development and software engineering,
+                    with a focus on building modern and responsive websites.
+
+                </p>
+
+            </div>
+
+            <!-- Goals -->
+
+            <div class="glass-card">
+
+                <h2 data-lang="goals">
+
+                    My Goals
+
+                </h2>
+
+                <ul>
+
+                    <li data-lang="goal1">
+
+                        Become a Full Stack Developer
+
+                    </li>
+
+                    <li data-lang="goal2">
+
+                        Create useful web applications
+
+                    </li>
+
+                    <li data-lang="goal3">
+
+                        Improve my JavaScript skills
+
+                    </li>
+
+                    <li data-lang="goal4">
+
+                        Learn React and Node.js
+
+                    </li>
+
+                    <li data-lang="goal5">
+
+                        Work internationally
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Technologies -->
+
+            <div class="glass-card">
+
+                <h2 data-lang="technologies">
+
+                    Technologies
+
+                </h2>
+
+                <div class="tech-list">
+
+                    <span>HTML5</span>
+
+                    <span>CSS3</span>
+
+                    <span>JavaScript</span>
+
+                    <span>Git</span>
+
+                    <span>Responsive Design</span>
+
+                    <span>UI Design</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             LEARNING JOURNEY
+        =========================== -->
+
+        <section class="timeline">
+
+            <h2 data-lang="journey">
+
+                Learning Journey
+
+            </h2>
+
+            <div class="timeline-item">
+
+                <span>
+
+                    2025
+
+                </span>
+
+                <p data-lang="timeline1">
+
+                    Began studying HTML and CSS.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <span>
+
+                    2025
+
+                </span>
+
+                <p data-lang="timeline2">
+
+                    Started learning JavaScript and responsive web design.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <span>
+
+                    2026
+
+                </span>
+
+                <p data-lang="timeline3">
+
+                    Building personal portfolio and practical web projects.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <span>
+
+                    Future
+
+                </span>
+
+                <p data-lang="timeline4">
+
+                    Become a professional Front-End Developer and continue learning new technologies.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             PROJECT BUTTON
+        =========================== -->
+
+        <section class="about-action">
+
+            <a
+                href="projects.html"
+                class="btn"
+                data-lang="explore">
+
+                Explore Projects
+
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Easy Code
+
+        </p>
+
+        <p data-lang="footer">
+
+            Built with HTML, CSS & JavaScript
+
+        </p>
+
+    </footer>
+
+    <!-- ==========================
+         JAVASCRIPT
+    =========================== -->
+
+    <script src="../js/matrix.js"></script>
+
+    <script src="../js/translations.js"></script>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

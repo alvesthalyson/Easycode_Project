@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Skills | Easy Code</title>
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Share+Tech+Mono&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Matrix Background -->
+
+    <canvas id="matrix"></canvas>
+
+    <!-- ==========================
+         HEADER
+    =========================== -->
+
+    <header>
+
+        <div class="logo">
+
+            <h1>EASY CODE</h1>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li>
+
+                    <a href="../index.html"
+                       data-lang="home">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="about.html"
+                       data-lang="about">
+
+                        About
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="skills.html"
+                       class="active"
+                       data-lang="skills">
+
+                        Skills
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="projects.html"
+                       data-lang="projects">
+
+                        Projects
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="contact.html"
+                       data-lang="contact">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Language -->
+
+        <div class="language-dropdown">
+
+            <button id="languageButton">
+
+                🌐
+
+                <span data-lang="language">
+
+                    Language
+
+                </span>
+
+                ▼
+
+            </button>
+
+            <div class="language-menu"
+                 id="languageMenu">
+
+                <button onclick="changeLanguage('en')">
+
+                    🇺🇸 English
+
+                </button>
+
+                <button onclick="changeLanguage('pt')">
+
+                    🇧🇷 Português
+
+                </button>
+
+                <button onclick="changeLanguage('ja')">
+
+                    🇯🇵 日本語
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+
+        <button id="menuButton">
+
+            ☰
+
+        </button>
+
+    </header>
+
+    <!-- ==========================
+         MAIN
+    =========================== -->
+
+    <main class="page">
+
+        <!-- Page Title -->
+
+        <section class="page-title">
+
+            <h1 data-lang="skillsHero">
+
+                My Skills
+
+            </h1>
+
+            <p data-lang="skillsSubtitle">
+
+                Technologies I'm currently learning and using.
+
+            </p>
+
+        </section>
+
+        <!-- ==========================
+             SKILLS
+        =========================== -->
+
+        <section class="skills-grid">
+
+            <!-- HTML -->
+
+            <div class="glass-card">
+
+                <h2>
+
+                    🌐 HTML5
+
+                </h2>
+
+                <p data-lang="htmlSkill">
+
+                    Builds the structure of web pages.
+
+                </p>
+
+                <div class="progress">
+
+                    <div class="progress-bar html">
+
+                        90%
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CSS -->
+
+            <div class="glass-card">
+
+                <h2>
+
+                    🎨 CSS3
+
+                </h2>
+
+                <p data-lang="cssSkill">
+
+                    Creates modern and responsive layouts.
+
+                </p>
+
+                <div class="progress">
+
+                    <div class="progress-bar css">
+
+                        85%
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- JavaScript -->
+
+            <div class="glass-card">
+
+                <h2>
+
+                    ⚡ JavaScript
+
+                </h2>
+
+                <p data-lang="jsSkill">
+
+                    Adds interactivity and dynamic behavior.
+
+                </p>
+
+                <div class="progress">
+
+                    <div class="progress-bar js">
+
+                        75%
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Git -->
+
+            <div class="glass-card">
+
+                <h2>
+
+                    🐙 Git
+
+                </h2>
+
+                <p data-lang="gitSkill">
+
+                    Version control and collaboration.
+
+                </p>
+
+                <div class="progress">
+
+                    <div class="progress-bar git">
+
+                        65%
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Responsive Design -->
+
+            <div class="glass-card">
+
+                <h2>
+
+                    📱 Responsive Design
+
+                </h2>
+
+                <p data-lang="responsiveSkill">
+
+                    Creating websites that work on every device.
+
+                </p>
+
+                <div class="progress">
+
+                    <div class="progress-bar responsive">
+
+                        85%
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Problem Solving -->
+
+            <div class="glass-card">
+
+                <h2>
+
+                    🧩 Problem Solving
+
+                </h2>
+
+                <p data-lang="problemSkill">
+
+                    Logical thinking and debugging skills.
+
+                </p>
+
+                <div class="progress">
+
+                    <div class="progress-bar problem">
+
+                        80%
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+                <!-- ==========================
+             DEVELOPMENT TOOLS
+        =========================== -->
+
+        <section class="tools">
+
+            <h2 data-lang="toolsTitle">
+
+                Development Tools
+
+            </h2>
+
+            <div class="tool-list">
+
+                <span>💻 Visual Studio Code</span>
+
+                <span>🐙 GitHub</span>
+
+                <span>🌐 Chrome DevTools</span>
+
+                <span>🎨 Figma</span>
+
+                <span>🪟 Windows</span>
+
+                <span>🐧 Linux</span>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             CURRENTLY LEARNING
+        =========================== -->
+
+        <section class="learning">
+
+            <h2 data-lang="learningTitle">
+
+                Currently Learning
+
+            </h2>
+
+            <div class="cards">
+
+                <div class="glass-card">
+
+                    <h3>
+
+                        ⚛ React
+
+                    </h3>
+
+                    <p data-lang="reactLearning">
+
+                        Building modern user interfaces with reusable components.
+
+                    </p>
+
+                </div>
+
+                <div class="glass-card">
+
+                    <h3>
+
+                        🟢 Node.js
+
+                    </h3>
+
+                    <p data-lang="nodeLearning">
+
+                        Creating backend applications using JavaScript.
+
+                    </p>
+
+                </div>
+
+                <div class="glass-card">
+
+                    <h3>
+
+                        🔗 REST APIs
+
+                    </h3>
+
+                    <p data-lang="apiLearning">
+
+                        Connecting applications through web services and APIs.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             LEARNING GOALS
+        =========================== -->
+
+        <section class="learning-goals">
+
+            <h2 data-lang="goalsTitle">
+
+                Learning Goals
+
+            </h2>
+
+            <div class="glass-card">
+
+                <ul class="goals-list">
+
+                    <li data-lang="goal1">
+
+                        ✔ Improve JavaScript skills
+
+                    </li>
+
+                    <li data-lang="goal2">
+
+                        ✔ Learn React
+
+                    </li>
+
+                    <li data-lang="goal3">
+
+                        ✔ Learn Node.js
+
+                    </li>
+
+                    <li data-lang="goal4">
+
+                        ✔ Build Full Stack Applications
+
+                    </li>
+
+                    <li data-lang="goal5">
+
+                        ✔ Contribute to Open Source Projects
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Easy Code
+
+        </p>
+
+        <p data-lang="footer">
+
+            Built with HTML, CSS & JavaScript
+
+        </p>
+
+    </footer>
+
+    <!-- ==========================
+         JAVASCRIPT
+    =========================== -->
+
+    <script src="../js/matrix.js"></script>
+
+    <script src="../js/translations.js"></script>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

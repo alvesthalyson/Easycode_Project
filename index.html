@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Easy Code | Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Matrix Background -->
+
+    <canvas id="matrix"></canvas>
+
+    <!-- ==========================
+         HEADER
+    =========================== -->
+
+    <header>
+
+        <div class="logo">
+
+            <h1>EASY CODE</h1>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li>
+
+                    <a href="index.html" data-lang="home">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="pages/about.html" data-lang="about">
+
+                        About
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="pages/skills.html" data-lang="skills">
+
+                        Skills
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="pages/projects.html" data-lang="projects">
+
+                        Projects
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="pages/contact.html" data-lang="contact">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Language -->
+
+        <div class="language-dropdown">
+
+            <button id="languageButton">
+
+                🌐
+                <span data-lang="language">
+
+                    Language
+
+                </span>
+
+                ▼
+
+            </button>
+
+            <div class="language-menu" id="languageMenu">
+
+                <button onclick="changeLanguage('en')">
+
+                    🇺🇸 English
+
+                </button>
+
+                <button onclick="changeLanguage('pt')">
+
+                    🇧🇷 Português
+
+                </button>
+
+                <button onclick="changeLanguage('ja')">
+
+                    🇯🇵 日本語
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+
+        <button id="menuButton">
+
+            ☰
+
+        </button>
+
+    </header>
+
+    <!-- ==========================
+         HERO
+    =========================== -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h2
+                id="heroTitle"
+                data-lang="heroTitle">
+
+                Wake Up, Developer.
+
+            </h2>
+
+            <p
+                id="heroText"
+                data-lang="heroText">
+
+                Learn HTML, CSS and JavaScript with practical projects.
+
+            </p>
+
+            <a
+                href="pages/projects.html"
+                class="btn"
+                data-lang="explore">
+
+                Explore Projects
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+         SKILLS PREVIEW
+    =========================== -->
+
+    <section class="skills-preview">
+
+        <h2 data-lang="programming">
+
+            Programming Languages
+
+        </h2>
+
+        <div class="cards">
+
+            <div class="card" onclick="showTerms('html')">
+
+                <h3>HTML</h3>
+
+                <p>
+
+                    Structure your website.
+
+                </p>
+
+            </div>
+
+            <div class="card" onclick="showTerms('css')">
+
+                <h3>CSS</h3>
+
+                <p>
+
+                    Design beautiful interfaces.
+
+                </p>
+
+            </div>
+
+            <div class="card" onclick="showTerms('javascript')">
+
+                <h3>JavaScript</h3>
+
+                <p>
+
+                    Add interactivity.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+         ABOUT
+    =========================== -->
+
+    <section class="about-preview">
+
+        <h2 data-lang="aboutTitle">
+
+            About Me
+
+        </h2>
+
+        <p data-lang="aboutText">
+
+            Student at
+            <strong>フォーラム情報アカデミー専門学校</strong>
+            passionate about Web Development and modern technologies.
+
+        </p>
+
+        <a
+            href="pages/about.html"
+            class="btn"
+            data-lang="readMore">
+
+            Read More
+
+        </a>
+
+    </section>
+        <!-- ==========================
+         LEARNING RESOURCES
+    =========================== -->
+
+    <section class="featured-projects">
+
+        <h2 data-lang="featured">
+
+            Learning Resources
+
+        </h2>
+
+        <div class="cards">
+
+            <a class="card"
+               href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+               target="_blank">
+
+                <h3>HTML</h3>
+
+                <p>
+
+                    Learn HTML with the official MDN documentation.
+
+                </p>
+
+            </a>
+
+            <a class="card"
+               href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+               target="_blank">
+
+                <h3>CSS</h3>
+
+                <p>
+
+                    Master layouts, colors, animations and responsive design.
+
+                </p>
+
+            </a>
+
+            <a class="card"
+               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+               target="_blank">
+
+                <h3>JavaScript</h3>
+
+                <p>
+
+                    Learn programming and make your websites interactive.
+
+                </p>
+
+            </a>
+
+        </div>
+
+        <div class="coming-soon">
+
+            <p data-lang="comingSoon">
+
+                🚀 Soon I will be uploading my own projects here.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+         TERMS MODAL
+    =========================== -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="closeModal()">
+
+                &times;
+
+            </span>
+
+            <h2 id="modalTitle">
+
+            </h2>
+
+            <ul id="modalList">
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Easy Code
+
+        </p>
+
+        <p data-lang="footer">
+
+            Built with HTML, CSS & JavaScript
+
+        </p>
+
+    </footer>
+
+    <!-- ==========================
+         JAVASCRIPT
+    =========================== -->
+
+    <script src="js/matrix.js"></script>
+
+    <script src="js/translations.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

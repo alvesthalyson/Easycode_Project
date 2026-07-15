@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Easy Code</title>
+
+    <link rel="stylesheet"
+        href="../css/style.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Matrix Background -->
+
+    <canvas id="matrix"></canvas>
+
+    <!-- ==========================
+         HEADER
+    =========================== -->
+
+    <header>
+
+        <div class="logo">
+
+            <h1>EASY CODE</h1>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li>
+
+                    <a href="../index.html"
+                        data-lang="home">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="about.html"
+                        data-lang="about">
+
+                        About
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="skills.html"
+                        data-lang="skills">
+
+                        Skills
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="projects.html"
+                        data-lang="projects">
+
+                        Projects
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="contact.html"
+                        class="active"
+                        data-lang="contact">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Language -->
+
+        <div class="language-dropdown">
+
+            <button id="languageButton">
+
+                🌐
+
+                <span data-lang="language">
+
+                    Language
+
+                </span>
+
+                ▼
+
+            </button>
+
+            <div class="language-menu"
+                id="languageMenu">
+
+                <button onclick="changeLanguage('en')">
+
+                    🇺🇸 English
+
+                </button>
+
+                <button onclick="changeLanguage('pt')">
+
+                    🇧🇷 Português
+
+                </button>
+
+                <button onclick="changeLanguage('ja')">
+
+                    🇯🇵 日本語
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Mobile -->
+
+        <button id="menuButton">
+
+            ☰
+
+        </button>
+
+    </header>
+
+    <!-- ==========================
+         MAIN
+    =========================== -->
+
+    <main class="page">
+
+        <!-- Hero -->
+
+        <section class="page-title">
+
+            <h1 data-lang="contactTitle">
+
+                Let's Connect
+
+            </h1>
+
+            <p data-lang="contactSubtitle">
+
+                I'm always open to discussing new projects,
+                collaborations and learning opportunities.
+
+            </p>
+
+        </section>
+
+        <!-- Contact -->
+
+        <section class="contact-container">
+
+            <!-- Contact Form -->
+
+            <div class="glass-card">
+
+                <h2 data-lang="sendMessage">
+
+                    Send a Message
+
+                </h2>
+
+                <form>
+
+                    <input
+                        type="text"
+                        id="name"
+                        data-lang-placeholder="namePlaceholder"
+                        placeholder="Your Name"
+                        required>
+
+                    <input
+                        type="email"
+                        id="email"
+                        data-lang-placeholder="emailPlaceholder"
+                        placeholder="Your Email"
+                        required>
+
+                    <textarea
+                        rows="7"
+                        id="message"
+                        data-lang-placeholder="messagePlaceholder"
+                        placeholder="Write your message..."
+                        required>
+
+                    </textarea>
+
+                    <button
+                        class="btn"
+                        id="sendButton"
+                        type="submit"
+                        data-lang="send">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- Contact Information -->
+
+            <div class="glass-card">
+
+                <h2 data-lang="contactInfo">
+
+                    Contact Information
+
+                </h2>
+
+                <div class="contact-item">
+
+                    <h3>
+
+                        Email
+
+                    </h3>
+
+                    <p data-lang="emailInfo">
+
+                        Available upon request
+
+                    </p>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <h3>
+
+                        GitHub
+
+                    </h3>
+
+                    <p data-lang="githubInfo">
+
+                        Coming Soon
+
+                    </p>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <h3>
+
+                        LinkedIn
+
+                    </h3>
+
+                    <p data-lang="linkedinInfo">
+
+                        Coming Soon
+
+                    </p>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <h3 data-lang="location">
+
+                        Location
+
+                    </h3>
+
+                    <p>
+
+                        Japan 🇯🇵
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+                <!-- ==========================
+             SOCIAL
+        =========================== -->
+
+        <section class="social-section">
+
+            <h2 data-lang="followMe">
+
+                Follow Me
+
+            </h2>
+
+            <div class="social-buttons">
+
+                <a href="#"
+                   class="social">
+
+                    GitHub
+
+                </a>
+
+                <a href="#"
+                   class="social">
+
+                    LinkedIn
+
+                </a>
+
+                <a href="mailto:your@email.com"
+                   class="social">
+
+                    Email
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             LOCATION
+        =========================== -->
+
+        <section class="map-section">
+
+            <h2 data-lang="location">
+
+                Location
+
+            </h2>
+
+            <div class="glass-card map-placeholder">
+
+                <p data-lang="locationText">
+
+                    Currently living and studying in Japan.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             FINAL MESSAGE
+        =========================== -->
+
+        <section class="contact-message">
+
+            <div class="glass-card">
+
+                <h2 data-lang="thankYou">
+
+                    Thank You!
+
+                </h2>
+
+                <p data-lang="thankYouText">
+
+                    Thank you for visiting my portfolio.
+                    I hope you enjoyed learning more about my journey.
+                    Feel free to come back soon to see my future projects!
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Easy Code
+
+        </p>
+
+        <p data-lang="footer">
+
+            Built with HTML, CSS & JavaScript
+
+        </p>
+
+    </footer>
+
+    <!-- ==========================
+         JAVASCRIPT
+    =========================== -->
+
+    <script src="../js/matrix.js"></script>
+
+    <script src="../js/translations.js"></script>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
